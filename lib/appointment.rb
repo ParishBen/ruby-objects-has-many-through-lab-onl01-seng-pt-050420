@@ -12,6 +12,6 @@ class Appointment
     @@all 
   end
   def patient
-    Appointment.all.map {|apt| apt.patient}
+    self.all.map {|apt| apt.patient}
   end
 end
